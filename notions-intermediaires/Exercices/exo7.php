@@ -1,4 +1,4 @@
-//Ecrire un programme qui affiche tous les nombres impairs de 1 à 20 avec la boucle while.
+<!-- Ecrire un programme qui affiche tous les nombres impairs de 1 à 20 avec la boucle while. -->
 
 <?php 
 
