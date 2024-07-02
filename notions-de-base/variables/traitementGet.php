@@ -7,12 +7,15 @@
 </head>
 <body>
     <?php 
-    $nom = $_POST['nom'];
-    $email = $_POST['email'];
+    $nom = $_GET['nom'];
+    $email = $_GET['email'];
 
     echo "Le nom est : ". $nom;
     echo "<br>";
     echo "L'email est : ".$email;
     ?>
+
+    <p><?= $nom ?></p>
+    <p><?= $email ?></p>
 </body>
 </html>

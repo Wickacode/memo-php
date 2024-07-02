@@ -2,10 +2,6 @@
 Les données sont envoyées au serveur PHP via la méthode POST.
 Les données sont ensuite stockées dans des variables spéciales appellées variables POST  -->
 
-<?php 
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +10,7 @@ Les données sont ensuite stockées dans des variables spéciales appellées var
     <title>Document</title>
 </head>
 <body>
-    <form action="traitement.php" method="POST">
+    <form action="traitementPost.php" method="POST">
         <label for="nom">Nom : </label>
         <input type="text" id="nom" name="nom">
         <label for="email">E-mail : </label>
