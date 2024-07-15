@@ -8,6 +8,9 @@ $age = $_SESSION['age'];
 //Création du cookie
 setcookie("username", $nom,time()+3600, "/","", false, true);
 
+//Récupération du cookie pour le mémoriser (par exemple, pour que l'utilisateur ait son nom affiché quand il se reconnectera)
+$nom = isset($_COOKIE['username'])?$_COOKIE['username']:$nom;
+
 if(isset($_GET['logout'])) {
     session_destroy();
     header('Location: delete.php');

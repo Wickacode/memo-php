@@ -5,13 +5,7 @@ Ils sont stockés sur un navigateur, donc sur le navigateur de l'utilisateur.
 Ils peuvent être lus par le serveur web lors de chaque demande de page.
 Le fonctionnement des cookies en php est le suivant : 
 setcookies(nom, valeur, expire, chemin, domaine, sécurité, httpsonly)
-
-
 -->
-
-<?php 
-
-?>
 
 <!DOCTYPE html>
 <html>
@@ -20,7 +14,7 @@ setcookies(nom, valeur, expire, chemin, domaine, sécurité, httpsonly)
     
 <form action="traitement.php" method="POST">
     <label for="nom">Nom</label>
-    <input type="text" name="nom" id="nom">
+    <input type="text" name="nom" id="nom" value="<?= isset($_COOKIE['username'])? htmlspecialchars($_COOKIE['username']) : '';?>"> //Mémorisation
     <br><br>
     <label for="age">Age</label>
     <input type="text" name="age" id="age">
