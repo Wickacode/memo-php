@@ -1,4 +1,4 @@
-<!-- Les objets sont des instances de ckasse qui sont des modèles de données et de comportement 
+<!-- Les objets sont des instances de classe qui sont des modèles de données et de comportement 
 Les classes vont nous permettre de définir un ensemble de propriétés, donc des variables et des méthodes 
 (des fonctions déclarées dans les classes).
 Pour créer une instance de classe on va créer le mot clé "New" suivi du nom de la classe et éventuellement 
